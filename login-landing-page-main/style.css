@@ -1,0 +1,125 @@
+
+
+:root{
+    --main-blue: #8781f3;
+    --hover-blue: #4F45F9;
+    --main-grey: #5B5B5B;
+    --light-gray: #B2AEAE;
+    --shadow: rgba(0, 0, 0, 0.32);
+
+
+
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(img/Scroll\ Group\ 1.svg);
+    background-repeat: no-repeat ;
+    background-position: bottom right;
+    overflow: hidden;
+    
+}
+.wrap{
+    margin: 0 auto;
+    width: 80%;
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+.left{
+    width: max-content;
+}
+.header p{
+    font-size: 70px;
+    margin-top: 5vh;
+    margin-botom: 10vh;
+    color: var(--main-blue);
+}
+
+.form-container form .user-title,
+.form-container form .pass-title{
+    display: block;
+    font-size: 34px;
+    color: var(--main-grey);
+    margin-bottom: 10px;
+    font-size: 34px;
+    margin-top: 30px;
+}
+.form-container form .lable-min{
+    font-size: 22px;
+    color: var(--main-grey);
+    margin-top:20px;
+    
+}
+input[type='text']{
+    border: 0;
+    box-shadow: 0px 3px 7px  var(--shadow);
+    width: 100%;
+    padding: 20px 10px 20px 0 ;
+    border-radius: 40px;
+    outline: none;
+    text-indent: 60px;
+    background-repeat: no-repeat;
+    background-position:center left 20px;
+}
+
+.username{
+    background-image: url(img/Icon\ awesome-user-friends.svg);
+}
+.password{
+    background-image: url(img/Icon\ awesome-lock.svg);
+    -webkit-text-security: disc;
+}
+.login-with-wrap{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5%;
+    font-size: 24px;
+}
+.google,
+.facebook{
+    box-shadow: 0 3px 10px var(--shadow);
+    padding: 15px 30px ;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-blue);
+    text-decoration: none;
+    
+}
+a span{
+    font-weight: 700;
+    margin-right: 15px;
+}
+.google:hover,
+.facebook:hover{
+    background-color: var(--main-blue);
+    color: white;
+}
+
+input[type='button']{
+    width: 100%;
+    border: 0;
+    margin-top: 10vh;
+    padding: 15px 0;
+    font-size: 25px;
+    color: white;
+    background-color: var(--main-blue);
+    border-radius: 40px;
+}
+input[type='button']:hover{
+    background-color: var(--hover-blue);
+    
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+}
+

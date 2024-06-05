@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+
+    /* Colors */
+    --yellow: hsl(47, 88%, 63%);
+    --black: hsl(0, 0%, 7%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+
+
+    /* Font */
+    --font: 16px;
+    --weight-600: 600;
+    --weight-800: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--yellow);
+    font-size: var(--font);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;   
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 2px solid var(--grey);
+    box-shadow: 10px 10px var(--black);
+    gap: 20px;    
+    padding: 20px;
+    width: min-content;
+}
+
+.img-container img {
+    border-radius: 15px;
+}
+.button-container {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.button-container a{
+    background-color: var(--yellow);
+    width: min-content;
+    padding: 5px 12px;
+    color: var(--black);
+    border-radius: 5px;
+}
+
+.button-container p {
+    color: var(--black);
+}
+
+.heading-container h1 {
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+.heading-container h1:hover {
+    color: var(--yellow);
+}
+
+.text-container p {
+    color: var(--grey);
+    font-weight: var(--weight-600);
+    line-height: 1.5;
+    
+}
+
+.author-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.author-container > img{
+    border-radius: 50%;
+    height: 40px;
+}
+
+.author-container p {
+    color: var(--black);
+    font-weight: var(--weight-800);
+}
+
+.weight-800{
+    font-weight: var(--weight-800);
+}
+
+.weight-600{
+    font-weight: var(--weight-600);
+}
+
+@media screen and (max-width: 375px){
+    *{
+        font-size: 14px;
+    }
+
+    section{
+        margin: 0 auto;
+        width: calc(100% - 45px);
+    }
+    .card,
+    .img-container img {
+        width: 100%;
+    }
+    .button-container{
+        gap: 10px;
+    }
+    .card{
+        gap: 15px;
+    }
+}

@@ -1,0 +1,150 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+@import url(https://fonts.google.com/specimen/Open+Sans);
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-size: contain;
+    background-color: var(--Violet);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container,
+.logo-container{
+    margin: 0 auto;
+    width: 90%;
+}
+section{
+    display: grid;
+    min-height: 100vh;
+    
+}
+.logo{
+    margin-top: 20px;
+    
+         
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 51% auto;
+    gap: 4%;
+}
+.img{
+    width: 100%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    
+}
+.title{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.5;
+    margin-top: 40px;
+    
+}
+.content{
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+.link{
+    margin-top: 20px;
+}
+.Regist{
+    font-size: 20px;
+    color: var(--Violet);
+    background-color: white;
+    padding: 3% 10%;
+    border-radius: 40px;
+    width: 100%;
+    
+}
+
+.Regist:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+.icon-container{
+    text-align: right;
+    
+}
+.icon{
+    font-size: 40px;
+    color: white;
+    margin-left: 10px;
+}
+.icon:hover{
+    color: var(--Soft-Magenta);
+}
+
+
+/*Responsive*/
+@media (max-width: 400px) {
+    .logo-container,
+    .container{
+        width: 85%;
+    }
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    .logo{
+        width: 60%;
+    }
+    .grid-container{
+        display: block;
+    }
+    .left{
+        margin-top: 7vh;
+    }
+    .right{
+        text-align: center;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .content{
+        font-size: 17.5px;
+    }
+    .content br {
+        display: none;
+    }
+    .Regist{
+        padding: 3% 20%;
+        font-size: 18px;
+    }
+    .icon-container{
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .icon{
+        font-size: 30px;
+    }
+    
+}
+
